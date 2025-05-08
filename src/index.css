@@ -11,7 +11,6 @@
 
 .buttons {
   text-align: left;
-  margin-left: 30px;
 }
 
 button {
@@ -30,4 +29,20 @@ button {
 
 .titolo h1 {
   padding: 20px;
+}
+
+.card {
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  text-align: left;
+  width: 700px;
+}
+
+h2 {
+  padding: 30px 30px 0px 30px;
+}
+
+p {
+  padding: 30px;
+  font-size: 20px;
 }

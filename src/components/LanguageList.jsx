@@ -1,5 +1,6 @@
 // import  {useState} from 'react';
 import Buttons from './Buttons.jsx';
+import Card from './Card.jsx'
 
 const LanguageList = () => {
     return (
@@ -9,6 +10,10 @@ const LanguageList = () => {
             </div>
             <div className="container">
                 <Buttons />
+            <div>
+                <Card />
+            </div>
+                
             </div>
             
         </>

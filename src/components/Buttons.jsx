@@ -31,4 +31,16 @@ const languages = [
   }
 ];
 
-export default languages;
+const Buttons =  () => {
+    return (
+        <div className="buttons">
+            {languages.map((language) => (
+                <button key={language.id}>
+                    <h3>{language.title}</h3>
+                </button>
+            ))}
+        </div>
+    )
+}
+
+export default Buttons;

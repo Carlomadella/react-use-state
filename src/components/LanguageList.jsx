@@ -1,6 +1,7 @@
 // import  {useState} from 'react';
 import Buttons from './Buttons.jsx';
 import Card from './Card.jsx'
+import Main from './Main.jsx';
 
 const LanguageList = () => {
     return (
@@ -9,11 +10,7 @@ const LanguageList = () => {
                 <h1>Learn Web Development</h1>
             </div>
             <div className="container">
-                <Buttons />
-            <div>
-                <Card />
-            </div>
-                
+                <Main />
             </div>
             
         </>

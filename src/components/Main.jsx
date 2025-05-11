@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const languages = [
   {
     id: 1,
@@ -31,16 +33,28 @@ const languages = [
   }
 ];
 
-const Buttons =  () => {
-    return (
-        <div className="buttons">
-            {languages.map((language) => (
-                <button key={language.id}>
-                    <h3>{language.title}</h3>
-                </button>
-            ))}
-        </div>
-    )
-}
+const Main = () => {
+  const [selectedLanguage, setActiveLanguage] = useState(languages[0]);
 
-export default Buttons;
+  return (
+    <div className="container">
+      <div className="mb-4">
+        {languages.map((language) => (
+          <button onClick={() => setActiveLanguage(language)} className="btn btn-primary me-3" key={language.id}>
+            {language.title}
+          </button>
+        ))}
+      </div>
+      <div>
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">{selectedLanguage.title}</h5>
+            <p className="card-text">{selectedLanguage.description}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Main;
